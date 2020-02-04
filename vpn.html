@@ -1,0 +1,209 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+ <title>Nya Corp</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+.luxbar-default{width:100%;position:relative;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.luxbar-static{box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);width:100%;position:absolute;top:0;left:0}.luxbar-static .luxbar-checkbox:checked ~ .luxbar-menu{position:absolute}.luxbar-fixed{width:100%;position:fixed;top:0;left:0;z-index:1000;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.luxbar-fixed-bottom{width:100%;position:fixed;bottom:0;left:0;z-index:1000;box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24)}.luxbar-hamburger span,.luxbar-hamburger span::before,.luxbar-hamburger span::after{display:block;height:2px;width:26px;transition:0.6s ease}.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span{background-color:transparent}.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::before,.luxbar-checkbox:checked ~ .luxbar-menu li .luxbar-hamburger span::after{margin-top:0}.luxbar-header{display:flex;flex-direction:row;justify-content:space-between;align-items:center;height:52px}.luxbar-menu-left .luxbar-navigation,.luxbar-menu-left .luxbar-header{justify-content:flex-start}.luxbar-menu-right .luxbar-hamburger{margin-left:auto}.luxbar-brand{font-size:1.6em;padding:18px 24px 18px 24px}.luxbar-menu{min-height:58px;transition:0.6s ease;width:100%}.luxbar-navigation{display:flex;flex-direction:column;list-style:none;padding-left:0;margin:0}.luxbar-menu a,.luxbar-item a{text-decoration:none;color:inherit;cursor:pointer}.luxbar-item{height:58px}.luxbar-item a{padding:18px 24px 18px 24px;display:block}.luxbar-hamburger{padding:18px 24px 18px 24px;position:relative;cursor:pointer}.luxbar-hamburger span::before,.luxbar-hamburger span::after{content:'';position:absolute}.luxbar-hamburger span::before{margin-top:-8px}.luxbar-hamburger span::after{margin-top:8px}.luxbar-checkbox{display:none}.luxbar-checkbox:not(:checked) ~ .luxbar-menu{overflow:hidden;height:58px}.luxbar-checkbox:checked ~ .luxbar-menu{transition:height 0.6s ease;height:100vh;overflow:auto}.dropdown{position:relative;height:auto;min-height:58px}.dropdown:hover>ul{position:relative;display:block;min-width:100%}.dropdown>a::after{position:absolute;content:'';right:10px;top:25px;border-width:5px 5px 0;border-color:transparent;border-style:solid}.dropdown>ul{display:block;overflow-x:hidden;list-style:none;padding:0}.dropdown>ul .luxbar-item{min-width:100%;height:29px;padding:5px 10px 5px 40px}.dropdown>ul .luxbar-item a{min-height:29px;line-height:29px;padding:0}@media screen and (min-width: 768px){.luxbar-navigation{flex-flow:row;justify-content:flex-end}.luxbar-hamburger{display:none}.luxbar-checkbox:not(:checked) ~ .luxbar-menu{overflow:visible}.luxbar-checkbox:checked ~ .luxbar-menu{height:58px}.luxbar-menu .luxbar-item{border-top:0}.luxbar-menu-right .luxbar-header{margin-right:auto}.dropdown{height:58px}.dropdown:hover>ul{position:absolute;left:0;top:58px;padding:0}.dropdown>ul{display:none}.dropdown>ul .luxbar-item{padding:5px 10px}.dropdown>ul .luxbar-item a{white-space:nowrap}}.luxbar-checkbox:checked+.luxbar-menu .luxbar-hamburger-doublespin span::before{transform:rotate(225deg)}.luxbar-checkbox:checked+.luxbar-menu .luxbar-hamburger-doublespin span::after{transform:rotate(-225deg)}.luxbar-checkbox:checked+.luxbar-menu .luxbar-hamburger-spin span::before{transform:rotate(45deg)}.luxbar-checkbox:checked+.luxbar-menu .luxbar-hamburger-spin span::after{transform:rotate(-45deg)}.luxbar-menu-dark,.luxbar-menu-dark .dropdown ul{background-color:#212121;color:#fff}.luxbar-menu-dark .active,.luxbar-menu-dark .luxbar-item:hover{background-color:#424242}.luxbar-menu-dark .luxbar-hamburger span,.luxbar-menu-dark .luxbar-hamburger span::before,.luxbar-menu-dark .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-light,.luxbar-menu-light .dropdown ul{background-color:#e0e0e0;color:#212121}.luxbar-menu-light .active,.luxbar-menu-light .luxbar-item:hover{background-color:#bdbdbd}.luxbar-menu-light .luxbar-hamburger span,.luxbar-menu-light .luxbar-hamburger span::before,.luxbar-menu-light .luxbar-hamburger span::after{background-color:#212121}.luxbar-menu-material-red,.luxbar-menu-material-red .dropdown ul{background-color:#b71c1c;color:#fff}.luxbar-menu-material-red .active,.luxbar-menu-material-red .luxbar-item:hover{background-color:#c62828}.luxbar-menu-material-red .luxbar-hamburger span,.luxbar-menu-material-red .luxbar-hamburger span::before,.luxbar-menu-material-red .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-indigo,.luxbar-menu-material-indigo .dropdown ul{background-color:#1a237e;color:#fff}.luxbar-menu-material-indigo .active,.luxbar-menu-material-indigo .luxbar-item:hover{background-color:#283593}.luxbar-menu-material-indigo .luxbar-hamburger span,.luxbar-menu-material-indigo .luxbar-hamburger span::before,.luxbar-menu-material-indigo .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-green,.luxbar-menu-material-green .dropdown ul{background-color:#1b5e20;color:#fff}.luxbar-menu-material-green .active,.luxbar-menu-material-green .luxbar-item:hover{background-color:#2e7d32}.luxbar-menu-material-green .luxbar-hamburger span,.luxbar-menu-material-green .luxbar-hamburger span::before,.luxbar-menu-material-green .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-amber,.luxbar-menu-material-amber .dropdown ul{background-color:#ff6f00;color:#fff}.luxbar-menu-material-amber .active,.luxbar-menu-material-amber .luxbar-item:hover{background-color:#ff8f00}.luxbar-menu-material-amber .luxbar-hamburger span,.luxbar-menu-material-amber .luxbar-hamburger span::before,.luxbar-menu-material-amber .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-brown,.luxbar-menu-material-brown .dropdown ul{background-color:#3e2723;color:#fff}.luxbar-menu-material-brown .active,.luxbar-menu-material-brown .luxbar-item:hover{background-color:#4e342e}.luxbar-menu-material-brown .luxbar-hamburger span,.luxbar-menu-material-brown .luxbar-hamburger span::before,.luxbar-menu-material-brown .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-bluegrey,.luxbar-menu-material-bluegrey .dropdown ul{background-color:#0f011e;color:#fff}.luxbar-menu-material-bluegrey .active,.luxbar-menu-material-bluegrey .luxbar-item:hover{color:#33405F}.luxbar-menu-material-bluegrey .luxbar-hamburger span,.luxbar-menu-material-bluegrey .luxbar-hamburger span::before,.luxbar-menu-material-bluegrey .luxbar-hamburger span::after{background-color:#fff}.luxbar-menu-material-cyan,.luxbar-menu-material-cyan .dropdown ul{background-color:#006064;color:#fff}.luxbar-menu-material-cyan .active,.luxbar-menu-material-cyan .luxbar-item:hover{background-color:#00838f}.luxbar-menu-material-cyan .luxbar-hamburger span,.luxbar-menu-material-cyan .luxbar-hamburger span::before,.luxbar-menu-material-cyan .luxbar-hamburger span::after{background-color:#fff}
+html {
+ color:white;
+ background-color: #212121;
+ font-family: 'Roboto', sans-serif;
+ text-align: center;
+}
+.card {
+  word-wrap:break-word;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 360px;max-width:100%;
+  margin-left: auto;margin-right: auto;
+  border-radius: 5px;
+}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.container {
+  padding: 2px 16px;
+    height: 500%;
+}
+a {text-decoration:none;}
+</style>
+</head>
+<body oncontextmenu="return false;">
+<header id="luxbar" class="luxbar-fixed" >
+    <input type="checkbox" class="luxbar-checkbox" id="luxbar-checkbox"/ >
+    <div class="luxbar-menu luxbar-menu-left luxbar-menu-material-bluegrey">
+        <ul class="luxbar-navigation">
+            <li class="luxbar-header">
+                <a href="index.html" class="luxbar-brand">Nya Corp</a>
+                <label class="luxbar-hamburger luxbar-hamburger-doublespin" 
+                id="luxbar-hamburger" for="luxbar-checkbox" style="margin-left:auto; margin-right:0;"> <span></span> </label>
+            </li>
+            <li class="luxbar-item"><a href="services.html">Services</a></li>
+            <li class="luxbar-item"><a href="solutions.html">Solutions</a></li>
+            <li class="luxbar-item"><a href="vpn.html" style="color: #33405F"><font size="2">VPN</font></font></a></li>
+        </ul>
+    </div>
+</header>
+<br><br><br>
+<h1>Nya VPN</h1>
+<div class="card" style="word-wrap:break-word">
+  <div class="container">
+<br>
+<img src="NyaVPN.png" style="max-width: 100%">
+<br>
+<a href="https://nyavpn.com" style="text-decoration:none;color:royalblue">NyaVPN.com</a><br><br>
+<i>Enjoy the fastest and most secure VPN,</i> <br>brought to you by 
+<a href="index.html" style="text-decoration: none;color:silver;box-shadow: -35px 169px 99px cyan">Nya Corp</a>!
+<br><br>
+
+<font style="text-align:center;border:.05rem solid;border-radius: .25rem;padding-left:100%;padding-right:0;padding-bottom:23rem;color:white"></font>
+
+<font color="dimgrey">Coming soon...</font><br>
+<font size="6"  color="ghostwhite" style="border-bottom: 1px dotted;border-color: skyblue;">Only €1 / week!</font>
+<br><br>
+<font size="3" color="snow">Anonymous Guest Checkout</font>
+
+    <input type="image" style="max-width:75%;margin-bottom: -25px;" src="https://www.coinpayments.net/images/pub/buynow-white.png" alt="Buy Now with CoinPayments.net">
+<br><br>
+<font size="4" color="#f8f4ff">Auto-buy now with
+<br><font size="2">PayPal (credit/debit cards accepted)  &
+<br>CryptoCurrency <font size="1"> (Bitcoin & Monero)</font><font size="1" color="limegreen"> +13.37% discount!</font>
+<br><font size="4"> via CoinPayments above 👆 </font></font><br>
+<font size="1">Instant E-mail delivery after payment confirmation!</font>
+<br><font color="black" size="2"><br>Coming soon: NyaVPN.com/account</font>
+<font color="black" size="1"><br>Manage your Nya VPN account, balance, keys, password, securely.</font>
+
+
+
+<br><br>
+<h2>Features</h2>
+Accelerates traffic and improves stability
+<br>
+All the perks of <a style="color:silver" href="https://nyacorp.com/services.html#net">Nya Net</a><br>
+Anonymous, no logs
+<br>
+DDoS protection<font size="2">
+<i> over <b>thirty terabits</b> per second</i>
+</font>
+<br>
+Fast and always online
+<br>
+Lightweight and runs on any device
+<br>
+Perfect-forward-secrecy
+<br>
+Post-quantum cryptography
+<br>
+State-of-the-art security
+<br>
+<font size="2">
+<ul style="text-align: left">
+<li><a href="http://cr.yp.to/chacha.html" style="color:silver">ChaCha20</a> for symmetric encryption, authenticated with <a href="http://cr.yp.to/mac.html"  style="color:silver">Poly1305</a>, using <a href="https://tools.ietf.org/html/rfc7539"  style="color:silver">RFC7539's AEAD construction</a></li>
+<li><a href="http://cr.yp.to/ecdh.html" style="color:silver">Curve25519</a> for ECDH</li>
+<li><a href="https://blake2.net/" style="color:silver">BLAKE2s</a> for hashing and keyed hashing, described in <a href="https://tools.ietf.org/html/rfc7693" style="color:silver">RFC7693</a></li>
+<li><a href="https://131002.net/siphash/" style="color:silver">SipHash24</a> for hashtable keys</li>
+<li><a href="https://eprint.iacr.org/2010/264" style="color:silver">HKDF</a> for key derivation, as described in <a href="https://tools.ietf.org/html/rfc5869" style="color:silver">RFC5869</a></li>
+</ul></font>
+
+<a href="https://WireGuard.com" style="text-decoration:none" target="_blank">
+  <img alt="WireGuard" src="https://www.wireguard.com/img/wireguard.svg" width="40%" style="margin-right: 0;margin-bottom: 6px">
+</a>
+<a href="https://CloudFlare.com" style="text-decoration:none" target="_blank">
+  <img alt="CloudFlare" src="cf.png" width="40%" style="margin-left: 0">
+</a>
+
+<br>
+
+<font size="1" color="ghostwhite">
+<a href="index.html" style="text-decoration: none;color:silver">NyaVPN.com</a> is the first and original virtual private network provider to utilize these highly advanced, beyond state-of-the-art technologies. Enjoy the fastest and most secure VPN, brought to you by <a href="index.html" style="text-decoration: none;color:silver">Nya Corp</a>! It is a part of the #1, leading global network for a far superior capacity to stop DDoS attacks than that of Akamai Prolexic, Imperva, Neustar, and Radware — combined. <a href="index.html" style="text-decoration: none;color:silver">Nya VPN</a> does NOT support insecure and slow protocols such as OpenVPN, SoftEther, PPTP, L2TP, IPsec, etc. & is NOT on an inferior network like the aforementioned, also including OVH, NFO, VOX, etc.!
+</font><br>
+<font size="1" color="darkgray">
+CloudFlare (will be) actively patching bypass attack methods and working on stopping new ones in advance. DDoS-Protected IP Addresses are provided by Frantech Solutions, via CF's Magic Transit. "WireGuard" and the "WireGuard" logo are registered trademarks of Jason A. Donenfeld. </font><br>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', { packages: ['corechart'] });
+var hasInstalledResizer = false;
+function drawCharts() {
+    var data = google.visualization.arrayToDataTable([
+        [{ label: 'Tunnel', type: 'string' }, { label: 'megabits per second', type: 'number' }, { type: 'string', role: 'annotation' }, { type: 'string', role: 'tooltip' }, { role: 'style' }],
+        ['WireGuard', 1011, '1011 mbps', 'This is the line-rate of gigabit ethernet. The CPU was not maxed out.', 'color: #5090f0; opacity: 0.8'],
+        ['IPsec Cha-Poly', 825, '825 mbps', 'The CPU was completely maxed out at this speed.', 'color: #00ba38; opacity: 0.8'],
+        ['IPsec AES-GCM', 881, '881 mbps', 'The CPU was completely maxed out at this speed.', 'color: #00ba38; opacity: 0.8'],
+        ['OpenVPN', 258, '258 mbps', 'The CPU was completely maxed out at this speed.', 'color: #f8766d; opacity: 0.8']
+    ]);
+    var ticks = [];
+    for (var i = 0; i <= 1024; i += 128)
+        ticks.push(i);
+    var options = {
+        title: 'Throughput',
+        hAxis: {
+            title: 'megabits per second (higher is better)',
+            viewWindow: { min: 0, max: 1024 },
+            ticks: ticks
+        },
+        legend: { position: 'none' },
+        height: 300,
+        backgroundColor: { fill: 'white' },
+    };
+    (new google.visualization.BarChart(document.getElementById('throughput_graph'))).draw(data, options);
+
+    data = google.visualization.arrayToDataTable([
+        [{ label: 'Tunnel', type: 'string' }, { label: 'milliseconds', type: 'number' }, { type: 'string', role: 'annotation' }, { role: 'style' }],
+        ['WireGuard', 0.403, '0.403 ms', 'color: #5090f0; opacity: 0.8'],
+        ['IPsec Cha-Poly', 0.521, '0.521 ms', 'color: #00ba38; opacity: 0.8'],
+        ['IPsec AES-GCM', 0.508, '0.508 ms', 'color: #00ba38; opacity: 0.8'],
+        ['OpenVPN', 1.541, '1.541 ms', 'color: #f8766d; opacity: 0.8']
+    ]);
+    options = {
+        title: 'Ping Time',
+        hAxis: {
+            title: 'milliseconds (lower is better)',
+            viewWindow: { min: 0, max: 1.6 },
+        },
+        legend: { position: 'none'},
+        height: 300,
+        backgroundColor: { fill: 'white' },
+        tooltip: {
+            trigger: 'none'
+        }
+    };
+    (new google.visualization.BarChart(document.getElementById('ping_graph'))).draw(data, options);
+
+    if (!hasInstalledResizer) {
+        $(window).resize(drawCharts);
+        hasInstalledResizer = true;
+    }
+}
+google.charts.setOnLoadCallback(drawCharts);
+</script>
+<div id="ping_graph" style="max-width: 100%"></div>
+<div id="throughput_graph" style="max-width: 100%"></div>
+<img src="https://2.bp.blogspot.com/-B4aIBSdZZv0/W4PndrhOPPI/AAAAAAAAAtc/qLJ9ZykA1rwau2YpRYcsstjDX6blstz2gCLcBGAs/s1600/WireGuard-VPN-1024x767.webp" width="100%">
+<br><br>
+<h2>Locations</h2><p>
+<img src="https://images.unsplash.com/photo-1542362642-b430743e4686?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80" width="100%">
+Offshore - Luxembourg, a politically and socially stable European state chosen for it's strong privacy and freedom of speech laws.<br><br>We have USA VPN locations while main infrastructure and data storage are hosted in an extremely privacy-protected country!<br>
+</p><p>
+<img src="https://images.unsplash.com/photo-1565548126407-4d2346ef2664?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" width="100%">
+East Coast - New York City
+</p><p>
+<img src="https://images.unsplash.com/photo-1523033749700-e584411c03e1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=746&q=80" width="100%">
+West Coast - Las Vegas
+</p>
+</p>
+    </p>
+</div></div>
+
+<div class="card">
+<div class="container">
+<p>
+<font size="2"><a href="index.html" style="text-decoration: none;color:silver">Nya Corp</a></font><font style="color:white" size="2">'s hidden service on the deepweb</font><br>
+<font size="1" color="grey">nyacorpzorj5ocbts46euccumcoiczlo5hgxgeyj4rrj4ke64f66vsad.onion</font><font size="1">
+<br><a target="" href="https://torproject.org" style="text-decoration: none;color:silver">TOR Project</a></font>
+</p>
+</div>
+</div>
+
+<div style="color:dimgrey"><p><font size="1">2020 &copy; Nya Corp</font></p></div>
+
+</body></html>
